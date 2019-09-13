@@ -17,7 +17,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 get_ipython().system(' git clone https://github.com/devikasathaye/Vertebral-Column-Classification')
-df = pd.read_csv('HW1/column_2C.dat', sep=' ', header=None, skiprows=0)
+df = pd.read_csv('Vertebral-Column-Classification/column_2C.dat', sep=' ', header=None, skiprows=0)
 df.columns = ['pelvic incidence', 'pelvic tilt', 'lumbar lordosis angle', 'sacral slope', 'pelvic radius', 'grade of spondylolisthesis', 'class']
 df['class'] = df['class'].map({'AB': 1, 'NO': 0}) #Abnormal=1, Normal=0
 df.head(10) #Displaying a part of the data
